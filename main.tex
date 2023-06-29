@@ -1,0 +1,48 @@
+\input{packages}
+\addbibresource{./References.bib}
+
+\title{Unnecessarily Long Title}
+
+\author{Max Fatouros}
+\affil{TRIUMF\\4004 Wesbrook Mall, Vancouver, British Columbia V6T 2A3 Canada}
+
+
+\date{June, 2023}
+
+
+% Title Page
+\begin{document}
+\maketitle
+% \vspace{1cm}
+\begin{abstract}
+    \todo[inline]{Write abstract}
+    \baselineskip 1.75em
+
+    \lipsum[0-2]
+\end{abstract}
+\thispagestyle{empty}
+
+
+\newpage
+
+% Table of contents page
+\baselineskip 1.5em
+\tableofcontents
+
+\thispagestyle{empty}
+
+% Main Contents
+\newpage
+\baselineskip 1.5em
+\input{sections/introduction}
+\input{sections/least-squares-methods}
+
+
+\newpage
+% References
+\baselineskip 1.75em
+\nocite{*}  % Uncomment if you have a bibliography with work read but not cited
+\printbibliography[heading=bibintoc]
+
+
+\end{document}
